@@ -1,0 +1,79 @@
+libinih (53-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:59:29 +0800
+
+libinih (53-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #982351)
+  * Add libinih1-udeb for Debian Installer (Closes: #981864)
+
+ -- Yangfl <mmyangfl@gmail.com>  Tue, 09 Feb 2021 18:47:19 +0800
+
+libinih (50-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat to 13
+
+ -- Yangfl <mmyangfl@gmail.com>  Sun, 14 Jun 2020 14:21:53 +0800
+
+libinih (48-1) unstable; urgency=medium
+
+  [ Stephan Lachnit ]
+  * New upstream release
+  * Bump Standards-Version to 4.5.0
+  * Use upstream build system (meson)
+  * Include C++ version (INIReader)
+
+ -- Yangfl <mmyangfl@gmail.com>  Tue, 03 Mar 2020 17:30:02 +0800
+
+libinih (47-1) unstable; urgency=medium
+
+  * New upstream release
+  * Honour DEB_BUILD_OPTIONS=nocheck (Closes: #945956)
+  * Bump Standards-Version to 4.4.1
+  * Add upstream metadata
+
+ -- Yangfl <mmyangfl@gmail.com>  Mon, 16 Dec 2019 17:25:08 +0800
+
+libinih (45-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix wrong multiarch directory when cross building (Closes: #932067)
+  * Add autopkgtest
+
+ -- Yangfl <mmyangfl@gmail.com>  Sun, 04 Aug 2019 20:13:32 +0800
+
+libinih (44-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.4.0
+  * Bump debhelper compat to 12
+
+ -- Yangfl <mmyangfl@gmail.com>  Mon, 08 Jul 2019 16:37:32 +0800
+
+libinih (42-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release r42.
+  * Bump Standards-Version to 4.2.1.
+  * Remove myself from uploaders.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 31 Aug 2018 16:42:35 -0400
+
+libinih (41-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add runtime options to the library
+  * Bump Standards-Version to 4.1.3
+  * Move Vcs to Salsa platform
+  * Bump debhelper compat to v11
+
+ -- Yangfl <mmyangfl@gmail.com>  Thu, 01 Mar 2018 16:31:23 +0800
+
+libinih (40-1) unstable; urgency=medium
+
+  * Initial release (Closes: #876211)
+
+ -- Yangfl <mmyangfl@gmail.com>  Thu, 28 Sep 2017 23:00:37 +0800
