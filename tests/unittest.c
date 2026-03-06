@@ -1,7 +1,7 @@
-/* inih -- unit tests
+/* inih -- tests
 
 This works simply by dumping a bunch of info to standard output, which is
-redirected to an output file (baseline_*.txt) and checked into the Subversion
+redirected to an output file (baseline_*.txt) and checked into the Git
 repository. This baseline file is the test output, so the idea is to check it
 once, and if it changes -- look at the diff and see which tests failed.
 
@@ -42,6 +42,11 @@ int dumper(void* user, const char* section, const char* name,
     printf("... %s%s%s;\n", name, value ? "=" : "", value ? value : "");
 #endif
 
+    if (!value) {
+        // Happens when INI_ALLOW_NO_VALUE=1 and line has no value (no '=' or ':')
+        return 1;
+    }
+
     return strcmp(name, "user")==0 && strcmp(value, "parse_error")==0 ? 0 : 1;
 }
 
@@ -67,5 +72,6 @@ int main(void)
     parse("bom.ini");
     parse("duplicate_sections.ini");
     parse("no_value.ini");
+    parse("long_section.ini");
     return 0;
 }

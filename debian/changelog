@@ -1,8 +1,33 @@
-libinih (53-deepin1) unstable; urgency=medium
+libinih (59-1) unstable; urgency=medium
 
-  * Rebuild
+  * New upstream release
+  * Bump Standards-Version to 4.7.2
 
- -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:59:29 +0800
+ -- Yangfl <mmyangfl@gmail.com>  Tue, 01 Apr 2025 09:18:46 +0800
+
+libinih (58-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #1070682)
+  * Bump Standards-Version to 4.7.0
+
+ -- Yangfl <mmyangfl@gmail.com>  Tue, 07 May 2024 16:56:05 +0800
+
+libinih (57-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.6.2
+
+ -- Yangfl <mmyangfl@gmail.com>  Mon, 07 Aug 2023 07:37:33 +0800
+
+libinih (55-1) unstable; urgency=medium
+
+  * Patch version to pkg-config file (Closes: #983231)
+  * Bump Standards-Version to 4.5.1
+  [ Sebastien Bacher ]
+  * debian/tests/unittest.sh:
+    - set the CC environment to be cross-build friendly (Closes: #983814)
+
+ -- Yangfl <mmyangfl@gmail.com>  Wed, 15 Jun 2022 14:08:31 +0800
 
 libinih (53-1) unstable; urgency=medium
 
