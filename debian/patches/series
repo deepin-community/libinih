@@ -5,3 +5,4 @@
 0005-Force-INI_HANDLER_LINENO.patch
 0006-Fix-cpp-type-of-INI_HANDLER_LINENO.patch
 0007-Force-include-stdlib.patch
+0008-Set-version.patch

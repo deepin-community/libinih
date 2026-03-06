@@ -5,7 +5,7 @@ Build-Depends:
  debhelper-compat (= 13),
  meson,
 Rules-Requires-Root: no
-Standards-Version: 4.5.0
+Standards-Version: 4.7.2
 Section: libs
 Homepage: https://github.com/benhoyt/inih
 Vcs-Git: https://salsa.debian.org/yangfl-guest/inih.git

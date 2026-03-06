@@ -1,7 +1,7 @@
-From f0e520a47a0f585e889e3f618348c99e571efa93 Mon Sep 17 00:00:00 2001
+From c33369c5572ff58081d725ff082def5705eba13e Mon Sep 17 00:00:00 2001
 From: yangfl <yangfl@users.noreply.github.com>
 Date: Mon, 16 Dec 2019 18:44:51 +0800
-Subject: [PATCH 4/7] tests: add options to unittest
+Subject: [PATCH 4/8] tests: add options to unittest
 
 ---
  tests/parseargs.c       | 78 +++++++++++++++++++++++++++++++++++++++++
@@ -113,7 +113,7 @@ index 0000000..353deb0
 +
 +#endif /* __INI_TEST_H__ */
 diff --git a/tests/unittest.c b/tests/unittest.c
-index 3e85dad..cc70f85 100644
+index 240ffe8..39bcab9 100644
 --- a/tests/unittest.c
 +++ b/tests/unittest.c
 @@ -13,18 +13,18 @@ respectively).
@@ -154,9 +154,9 @@ index 3e85dad..cc70f85 100644
 -#endif
 +}
  
-     return strcmp(name, "user")==0 && strcmp(value, "parse_error")==0 ? 0 : 1;
- }
-@@ -55,8 +55,12 @@ void parse(const char* fname) {
+     if (!value) {
+         // Happens when INI_ALLOW_NO_VALUE=1 and line has no value (no '=' or ':')
+@@ -60,8 +60,12 @@ void parse(const char* fname) {
      u++;
  }
  
@@ -171,7 +171,7 @@ index 3e85dad..cc70f85 100644
      parse("normal.ini");
      parse("bad_section.ini");
 diff --git a/tests/unittest_string.c b/tests/unittest_string.c
-index 4200e6b..8e00c79 100644
+index bb4ae7c..3c3214b 100644
 --- a/tests/unittest_string.c
 +++ b/tests/unittest_string.c
 @@ -3,7 +3,8 @@
@@ -199,5 +199,5 @@ index 4200e6b..8e00c79 100644
      parse("basic", "[section]\nfoo = bar\nbazz = buzz quxx");
      parse("crlf", "[section]\r\nhello = world\r\nforty_two = 42\r\n");
 -- 
-2.29.2
+2.47.2
 
