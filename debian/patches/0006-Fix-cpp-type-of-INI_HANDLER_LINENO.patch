@@ -1,14 +1,14 @@
-From b6f088c7fd1c7f602f9f0bd2095fe092206939bc Mon Sep 17 00:00:00 2001
+From 9adeab9afc4a7648817071f3ebfefc09d7ad7996 Mon Sep 17 00:00:00 2001
 From: yangfl <yangfl@users.noreply.github.com>
 Date: Tue, 9 Feb 2021 19:44:21 +0800
-Subject: [PATCH 6/7] Fix cpp type of INI_HANDLER_LINENO
+Subject: [PATCH 6/8] Fix cpp type of INI_HANDLER_LINENO
 
 ---
  cpp/INIReader.cpp | 4 ++++
  1 file changed, 4 insertions(+)
 
 diff --git a/cpp/INIReader.cpp b/cpp/INIReader.cpp
-index 1bdac40..c203a86 100644
+index 215e68f..46bf92c 100644
 --- a/cpp/INIReader.cpp
 +++ b/cpp/INIReader.cpp
 @@ -12,6 +12,10 @@
@@ -23,5 +23,5 @@ index 1bdac40..c203a86 100644
  #include "INIReader.h"
  
 -- 
-2.29.2
+2.47.2
 

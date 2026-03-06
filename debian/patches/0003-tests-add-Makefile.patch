@@ -1,13 +1,27 @@
-From 2b381fc3dc86804e17959e8dc0f50ea69a2715a8 Mon Sep 17 00:00:00 2001
+From 1bc321a7881f7c3da2277c9fe8206d9dd1eb0344 Mon Sep 17 00:00:00 2001
 From: yangfl <yangfl@users.noreply.github.com>
 Date: Mon, 16 Dec 2019 18:13:38 +0800
-Subject: [PATCH 3/7] tests: add Makefile
+Subject: [PATCH 3/8] tests: add Makefile
 
 ---
+ meson.build    |  2 +-
  tests/Makefile | 77 ++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 77 insertions(+)
+ 2 files changed, 78 insertions(+), 1 deletion(-)
  create mode 100644 tests/Makefile
 
+diff --git a/meson.build b/meson.build
+index b104957..c419c6a 100644
+--- a/meson.build
++++ b/meson.build
+@@ -99,7 +99,7 @@ inih_dep = declare_dependency(
+     include_directories : inc_inih
+ )
+ 
+-subdir('tests')
++#subdir('tests')
+ 
+ #### INIReader ####
+ if get_option('with_INIReader')
 diff --git a/tests/Makefile b/tests/Makefile
 new file mode 100644
 index 0000000..4589c50
@@ -92,5 +106,5 @@ index 0000000..4589c50
 +clean:
 +	rm -rf *.o unittest unittest_string test_*.txt
 -- 
-2.29.2
+2.47.2
 

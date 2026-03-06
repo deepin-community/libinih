@@ -1,0 +1,32 @@
+From 7e6fb7b65fd37fbfb69afd818d1d8eb9db5fb1e0 Mon Sep 17 00:00:00 2001
+From: yangfl <yangfl@users.noreply.github.com>
+Date: Wed, 15 Jun 2022 14:19:20 +0800
+Subject: [PATCH 8/8] Set version
+
+---
+ meson.build | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/meson.build b/meson.build
+index 91a0d9a..7acc1ef 100644
+--- a/meson.build
++++ b/meson.build
+@@ -81,6 +81,7 @@ lib_inih = library('inih',
+     c_args : [arg_static, extra_args],
+     install : distro_install,
+     soversion : '1',
++    version : meson.project_version(),
+     gnu_symbol_visibility: 'hidden'
+ )
+ 
+@@ -116,6 +117,7 @@ if get_option('with_INIReader')
+         dependencies : inih_dep,
+         install : distro_install,
+         soversion : '0',
++        version : meson.project_version(),
+         gnu_symbol_visibility: 'hidden'
+     )
+ 
+-- 
+2.47.2
+
